@@ -1,0 +1,189 @@
+/* ===== LAYOUT ===== */
+.bd-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;        /* 🔥 important */
+  background: #f8fafc;
+}
+
+
+/* ===== SIDEBAR ===== */
+/* ===== SIDEBAR ===== */
+.bd-sidebar {
+ width: 260px;
+  min-width: 260px;
+  height: 100vh;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  padding: 24px 16px;
+  color: #e5e7eb;
+}
+
+/* MAIN MENU TITLE */
+.bd-sidebar-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #94a3b8;
+  margin-bottom: 18px;
+  padding-left: 8px;
+}
+
+/* NAV */
+.bd-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* NAV ITEM */
+.bd-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #cbd5f5;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* ICON */
+.bd-icon {
+  font-size: 18px;
+}
+
+/* HOVER */
+.bd-nav-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ACTIVE */
+.bd-nav-item.active {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #022c22;
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+}
+
+
+/* ===== MAIN ===== */
+.bd-main {
+  flex: 1;             /* 🔥 fills remaining space */
+  width: 100%;         /* 🔥 important */
+  min-width: 0;        /* 🔥 prevents overflow bugs */
+  padding: 24px;
+  background: #f8fafc;
+}
+
+
+/* ===== HEADER ===== */
+.bd-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.bd-header h1 {
+  margin: 0;
+}
+
+.bd-header button {
+  padding: 10px 16px;
+  border: none;
+  background: #10b981;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===== FILTERS ===== */
+.bd-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.bd-filters input,
+.bd-filters select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+/* ===== LOANS GRID ===== */
+.bd-loans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* ===== LOAN CARD ===== */
+.bd-loan-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.bd-loan-card.active {
+  border-left: 5px solid #10b981;
+}
+
+.bd-loan-card.completed {
+  border-left: 5px solid #2563eb;
+}
+
+.bd-card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.bd-card-footer {
+  margin-top: 16px;
+  text-align: right;
+}
+
+.bd-card-footer button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #10b981;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ===== MODAL ===== */
+.bd-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bd-modal {
+  background: #fff;
+  padding: 24px;
+  border-radius: 14px;
+  width: 320px;
+}
+
+.bd-modal input {
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+}
+
+.bd-modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+.bd-container {
+  width: 100%;
+}
